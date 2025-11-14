@@ -15,6 +15,6 @@ class TestAgeCategorization(unittest.TestCase):
         self.assertEqual(categorize_by_age(65), "Golden Age")
         self.assertEqual(categorize_by_age(120), "Golden Age")
     def test_error(self):
-        self.assertEqual(categorize_by_age(-1), f"Invalid Age: -1")
-        self.assertEqual(categorize_by_age(-121), f"Invalid Age: -121")
-        self.assertEqual(categorize_by_age(121), f"Invalid Age: 121")
+        self.assertEqual(categorize_by_age(-1), "Invalid Age: -1")
+        self.assertEqual(categorize_by_age(-121), "Invalid Age: -121")
+        self.assertEqual(categorize_by_age(121), "Invalid Age: 121")
